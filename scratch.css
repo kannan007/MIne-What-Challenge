@@ -1,0 +1,163 @@
+.container-fluid
+{
+	background: url("images/tile-bg.png");
+	margin-bottom: 40px;
+}
+.firstheader
+{
+	background-color: #DC1628;
+}
+.firstheader h5
+{
+	color: white;
+}
+.firstheader h5,.secondheader h5
+{
+	margin: 0;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 20px 10px;
+}
+.secondheader
+{
+	background-color: #F2F0F2;
+	border-bottom: 1px solid red;
+}
+.secondheader h5
+{
+	color:#949294;
+}
+.status
+{
+	margin-top: 40px;
+}
+.status th
+{
+	background-color: #F2F0F2;
+}
+.status tbody tr
+{
+	background-color:#F9F7F9;
+}
+.status tbody tr td:nth-child(odd)
+{
+	color: #9A989A;
+}
+.status .table>thead>tr>th
+{
+	padding: 5px 15px;
+}
+.status .table>tbody>tr>td 
+{
+	padding: 15px  15px;
+	text-transform: uppercase;
+	border-top: 3px solid white;
+}
+.status h5
+{
+	text-transform: uppercase;
+	color: #A8A6A8;
+	padding: 0 0 20px 0;
+}
+#chart
+{
+	height: 300px;
+	width: auto;
+}
+.c3-chart-arc path {
+   stroke: white;
+    stroke-width: 5px;
+}
+.items h5
+{
+	color: #A6A4A6;
+	text-transform: uppercase;
+	padding: 10px 8px;
+	font-weight: 100;
+}
+.items .col-sm-2
+{
+	position: relative;
+	border: 1px solid #CAC9CA;
+	margin: 0 0 0 25px;
+}
+.items .col-sm-2 h4
+{
+	float: left;
+	padding: 10px 15px;
+	font-weight: bold;
+	display: inline-block;
+	border: none;
+	background-color: #DEDCDE;
+}
+.items .col-sm-2 img
+{
+	height: 200px;
+	width: auto;
+}
+.items .col-sm-2 h5
+{
+	margin: 0;
+	color: #BDBBBD;
+	text-transform: uppercase;
+}
+.items .col-sm-2 p
+{
+	color: #E0DEE0;
+}
+.items .col-sm-2 hr
+{
+	margin:0 -15px;
+	padding: 0;
+	border: 0;	
+	border-top: 2px solid #EEECEE;
+	border-bottom: 2px solid white;
+}
+.items .tablecontents
+{
+	background-color: #FCFAFC;
+}
+.items .tablecontents table
+{
+	margin-bottom: 0;
+}
+.items .tablecontents table tr td:nth-child(odd)
+{
+	color: #A6A4A6;
+}
+.items .tablecontents .table>tbody>tr>td 
+{
+	font-size: 14px;
+	border-top: none;
+}
+.items .tablecontents div
+{
+	text-align: center;
+}
+.items .tablecontents .fa
+{
+	color: #B7B5B7;
+}
+@media only screen and (min-width: 768px) and (max-width:1032px)
+{
+	.col-sm-2
+	{
+		width: 35%;
+		margin: 10px 5px !important;
+	}
+	.items .col-sm-2 img
+	{
+		float: right;
+	}
+}
+@media only screen and (min-width: 340px) and (max-width:768px)
+{
+	.col-sm-2
+	{
+		margin: 10px 0 !important;
+	}
+	.items .col-sm-2 img
+	{
+		float: right;
+	}
+}

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mine What</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.4.10/c3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.4.13/d3.min.js"></script>
+<link rel="stylesheet" type="text/css" href="scratch.css">
+</head>
+<body>
+<div class="container-fluid">
+<div class="row">
+<div class="col-sm-9 firstheader">
+<h5>My application</h5>	
+</div>
+</div>
+<div class="row">
+<div class="col-sm-9 secondheader">
+<h5>Sample Page</h5>	
+</div>
+</div>
+<div class="row">
+<div class="col-sm-9 status">
+<div class="col-sm-5">
+<h5>Revenue By acquistion source</h5>
+<table class="table">
+<thead>
+<tr>
+<th>Sources</th>
+<th>Revenue</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Facebook.com</td>
+<td>$6090</td>
+</tr>
+<tr>
+<td>Quora.com</td>
+<td>$3045</td>
+</tr>
+<tr>
+<td>Twitter.com</td>
+<td>$2284</td>
+</tr>
+<tr>
+<td>Email</td>
+<td>$1675</td>
+</tr>
+<tr>
+<td>organic</td>
+<td>$1370</td>
+</tr>
+<tr>
+<td>Direct</td>
+<td>$1370</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="col-sm-5 col-sm-offset-1">
+<h5>Device Distribution</h5>
+<div id="chart">
+</div>
+</div>
+</div>
+</div>
+<div class="col-sm-12 items">
+<h5>Top Products</h5>
+<div class="row">
+<div class="col-sm-2">
+<h4>1</h4>
+<img src="images/boot.jpg">
+<div style="clear: both;"></div>
+<h5>Twisted Boots</h5>
+<p>+154 views 2 days ago</p>
+<hr>
+<div class="tablecontents">
+<table class="table">
+<tbody>
+<tr>
+<td>Views</td>
+<td>10989</td>
+</tr>
+<tr>
+<td>Purchases</td>
+<td>8908</td>
+</tr>
+<tr>
+<td>Conversion Rate</td>
+<td>3.5%</td>
+</tr>
+<tr>
+<td>Revenue</td>
+<td>$54274</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align: center;">
+<span ><i class="fa fa-angle-up"></i></span>
+</div>
+</div>
+</div>
+<div class="col-sm-2">
+<h4>2</h4>
+<img src="images/boot.jpg">
+<div style="clear: both;"></div>
+<h5>Twisted Boots</h5>
+<p>+154 Views 2 days ago</p>
+<hr>
+<div class="tablecontents">
+<table class="table">
+<tbody>
+<tr>
+<td>Views</td>
+<td>10989</td>
+</tr>
+<tr>
+<td>Purchases</td>
+<td>8908</td>
+</tr>
+<tr>
+<td>Conversion Rate</td>
+<td>3.5%</td>
+</tr>
+<tr>
+<td>Revenue</td>
+<td>$54274</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align: center;">
+<span ><i class="fa fa-angle-up"></i></span>
+</div>
+</div>
+</div>
+<div class="col-sm-2">
+<h4>3</h4>
+<img src="images/boot.jpg">
+<div style="clear: both;"></div>
+<h5>Twisted Boots</h5>
+<p>+154 views 2 days ago</p>
+<hr>
+<div class="tablecontents">
+<table class="table">
+<tbody>
+<tr>
+<td>Views</td>
+<td>10989</td>
+</tr>
+<tr>
+<td>Purchases</td>
+<td>8908</td>
+</tr>
+<tr>
+<td>Conversion Rate</td>
+<td>3.5%</td>
+</tr>
+<tr>
+<td>Revenue</td>
+<td>$54274</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align: center;">
+<span ><i class="fa fa-angle-up"></i></span>
+</div>
+</div>
+</div>
+<div class="col-sm-2">
+<h4>4</h4>
+<img src="images/boot.jpg">
+<div style="clear: both;"></div>
+<h5>Twisted Boots</h5>
+<p>+154 views 2 days ago</p>
+<hr>
+<div class="tablecontents">
+<table class="table">
+<tbody>
+<tr>
+<td>Views</td>
+<td>10989</td>
+</tr>
+<tr>
+<td>Purchases</td>
+<td>8908</td>
+</tr>
+<tr>
+<td>Conversion Rate</td>
+<td>3.5%</td>
+</tr>
+<tr>
+<td>Revenue</td>
+<td>$54274</td>
+</tr>
+</tbody>
+</table>
+<div style="text-align: center;">
+<span ><i class="fa fa-angle-up"></i></span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">
+var chart = c3.generate({
+  bindto: '#chart',
+    data: {
+        columns: [
+          ['Ipad', 35],
+          ['Desktop',16],
+          ['Mobile',49]
+        ],
+        type : 'donut',
+      order:null,
+       colors: {
+           Ipad: '#8DD099',
+            Desktop: '#FF7378',
+            Mobile: '#FDB37A',
+        },
+    },
+});
+</script>
+</body>
+</html>
